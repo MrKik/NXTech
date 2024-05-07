@@ -62,6 +62,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const table = document.createElement('table');
         table.innerHTML = `
             <tr>
+            <th>Orden de compra</th>
             <th>RFC Emisor</th>
             <th>Razón social</th>
             <th>Fecha timbrado</th>
@@ -71,6 +72,7 @@ document.addEventListener('DOMContentLoaded', function() {
             <!-- Agrega más encabezados de columna según sea necesario -->
             </tr> 
             <tr>
+            <td>${document.getElementById("myInputOC")}</td>
             <td>${data.rfcemisor}</td>
             <td>${data.empresaFactura}</td>
             <td>${data.fecha}</td>
