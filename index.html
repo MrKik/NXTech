@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DRG Acceso a proveedores</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <!-- <h2 class="logo"><img src="DRG Logo.png" alt="NXtech Logo"></h2> -->
+        <nav class="navigation">            
+            <button class="btnLogin-popup">Acceso</button>
+        </nav>
+    </header>
+
+    <div class="wrapper">
+        <div class="form-box login">
+            <h2>Acceso a Proveedores</h2>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                    <input type="email" required>
+                    <label>Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                    <input type="password" required>
+                    <label>Password</label>
+                </div>
+                <a href="Invoice.html"><button type="button" class="btn">Entrar</button></a>
+
+                <script>
+                    function myOnClicFn(){
+                        document.location.href="Invoice.html";
+                    }
+                </script>
+
+                <div class="login-register">
+                    <p>¿Aún no tienes una cuenta? <a href="#" class="register-link">Regístrate</a></p>
+                </div>
+            </form>
+        </div>
+
+        <div class="form-box register">
+            <h2>Registro de Proveedores</h2>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="business"></ion-icon></span>
+                    <input type="text" required>
+                    <label>Empresa</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="business"></ion-icon></span>
+                    <input type="text" required>
+                    <label>RFC</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="person"></ion-icon></span>
+                    <input type="text" required>
+                    <label>Nombre</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="person"></ion-icon></span>
+                    <input type="text" required>
+                    <label>Apellidos</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="call"></ion-icon></span>
+                    <input type="tel" required>
+                    <label>Teléfono móvil</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                    <input type="email" required>
+                    <label>Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                    <input type="password" required>
+                    <label>Password</label>
+                </div>
+                <div class="Terms">
+                    <label><input type="checkbox" required>
+                    Acepto los <a href="#">Términos y Condiciones</a></label>
+                </div>
+                <button type="submit" class="btn">Registrarme</button>
+                <div class="login-register">
+                    <p>¿Ya tienes una cuenta? <a href="#" class="login-link">Inicia sesión</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
