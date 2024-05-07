@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Subir facturas</title>
+    <script>
+        function saveInput() {
+            var userInputOC = document.getElementbyId("myInputOC").value;
+        }
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -11,6 +15,8 @@
         <h1>Carga de facturas</h1>
         <form id="uploadForm" enctype="multipart/form-data">
             <div class="form-group">
+                <label for="ordencompra">Orden de compra: </label>
+                <input type="text" id="myInputOC">
                 <label for="pdfFile">Selecciona un archivo PDF:</label>
                 <input type="file" id="pdfFile" name="pdfFile" accept=".pdf">
             </div>
